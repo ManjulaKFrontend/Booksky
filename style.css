@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Imperial+Script&family=Inter&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@500&family=Noto+Sans+Tirhuta&family=Nunito:wght@600;700&family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@600;700&family=PT+Sans+Narrow:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway&family=Roboto:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"roboto" ;
+}
+body{
+background-color:rgb(2, 2, 28);
+
+}
+.navbar{
+    background-color:teal;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 8px 8px 10px  rgb(2, 2, 28);
+}
+.container{
+    padding: 10px;
+    height: 100vh;
+
+}
+.book-container{
+    padding: 25px;
+    width: 40%;
+    background-color: darkcyan;
+    border-radius: 10px;
+    margin: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.book-container h2{
+    color:rgb(2, 2, 28);
+padding: 20px 0;
+   
+}
+.book-container h5{
+padding: 20px 0;
+}
+.book-container p{
+padding: 20px 0;
+    line-height: 28px;
+}
+.book-container button{
+    background-color:rgb(2, 2, 28);
+    color: white;
+padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+   
+}
+#add-popup-button{
+    background-color: teal;
+    color: white;
+    border-radius: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+#add-popup-button:hover{
+    color:black;
+    transition: 0.5s;
+    background-color: white;
+}
+.popup-overlay{
+    background-color:rgb(2, 2, 28);
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.popup-box{
+background-color: teal;
+width: 40%;
+padding: 40px;
+border-radius: 10px;
+position: absolute;
+top: 20%;
+left: 30%;
+z-index: 2;
+display: none;
+
+}
+.popup-box h2{
+    padding: 10px 0;
+    margin: 5px;
+}
+.popup-box input{
+    background: transparent;
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid lightgrey;
+
+}
+
+
+
+.popup-box textarea{
+    background: transparent;
+   width: 100%;
+    margin: 5px;
+    padding: 20px;
+    font-size: 15px;
+    border: 1px solid lightgray;
+
+}
+.popup-box input::placeholder{
+    color: white;
+}
+
+
+.popup-box textarea::placeholder{
+    color:white;
+}
+.popup-box input:focus{
+outline: none;
+}
+.popup-box button{
+    background-color:rgb(2, 2, 28);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px 2px;
+    border: none;
+    color: white;
+}
+button:hover{
+    border: 1px solid white;
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+@media only screen and (max-width:500px) and (min-width:200px){
+    .book-container{
+        width: 80%;
+        margin: 10px;
+    }
+    #add-popup-button{
+        padding: 10px;
+    }
+    .popup-box{
+        width: 80%;
+        top: 20%;
+        left: 10%;
+
+    }
+    #add-popup-button{
+        right: 20px;
+        bottom: 10px;
+    }
+    .navbar{
+        margin: 20px;
+    }
+}
